@@ -16,6 +16,6 @@ git add *
 5. Push
 
 # IMPORTANT!
-if index.html has been modified, make its copy as 404.html.
-If gitPages cannot find file from url, it returns 404, witch brakes Angular routing.
+if `index.html` has been modified, make its copy as `404.html`.
+If gitPages cannot find file from url, it returns `404`, witch brakes Angular routing.
 To hack this, 404.html has been created with the same content as index.html

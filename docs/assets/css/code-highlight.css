@@ -1,0 +1,59 @@
+.toolbar {
+    margin-top: -30px !important;
+    margin-left: 10px !important;
+    margin-bottom: 30px !important;
+}
+
+[dir=ltr] .copy-to-clipboard-button {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    color: #868e96;
+    border-color: #868e96;
+    border-radius: 100px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+@media (prefers-reduced-motion: reduce) {
+    [dir=ltr] .copy-to-clipboard-button {
+        transition: none
+    }
+}
+
+[dir=ltr] .copy-to-clipboard-button:hover {
+    color: #fff;
+    background-color: #868e96;
+    border-color: #868e96;
+    text-decoration: none
+}
+
+[dir=ltr] .copy-to-clipboard-button.focus, [dir=ltr] .copy-to-clipboard-button:focus {
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(134, 142, 150, .5)
+}
+
+[dir=ltr] .copy-to-clipboard-button.disabled, [dir=ltr] .copy-to-clipboard-button:disabled {
+    opacity: .65;
+    color: #868e96;
+    background-color: transparent
+}
+
+[dir=ltr] .copy-to-clipboard-button:not(:disabled):not(.disabled).active, [dir=ltr] .copy-to-clipboard-button:not(:disabled):not(.disabled):active, [dir=ltr] .show > .copy-to-clipboard-button.dropdown-toggle {
+    color: #fff;
+    background-color: #868e96;
+    border-color: #868e96
+}
+
+[dir=ltr] .copy-to-clipboard-button:not(:disabled):not(.disabled).active:focus, [dir=ltr] .copy-to-clipboard-button:not(:disabled):not(.disabled):active:focus, [dir=ltr] .show > .copy-to-clipboard-button.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(134, 142, 150, .5)
+}
+
